@@ -28,29 +28,29 @@ export class AppComponent implements OnInit {
   }
 
   getArtists() {
-    let jackpotSub: Subscription = this.data.getArtists().subscribe(res => {
+    let artistSub: Subscription = this.data.getArtists().subscribe(res => {
 
       this.artists = res;
       console.log("artists data", res);
-      jackpotSub.unsubscribe();
+      artistSub.unsubscribe();
     });
   }
 
   getAlbums() {
-    let jackpotSub: Subscription = this.data.getAlbums().subscribe(res => {
+    let artistSub: Subscription = this.data.getAlbums().subscribe(res => {
 
       this.albums = res;
       console.log("albums data", res);
-      jackpotSub.unsubscribe();
+      artistSub.unsubscribe();
     });
   }
 
   getPlaylists() {
-    let jackpotSub: Subscription = this.data.getPlaylists().subscribe(res => {
+    let artistSub: Subscription = this.data.getPlaylists().subscribe(res => {
 
       this.playlist = res;
       console.log("playlists data", res);
-      jackpotSub.unsubscribe();
+      artistSub.unsubscribe();
     });
   }
 

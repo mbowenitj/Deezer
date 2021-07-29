@@ -1,6 +1,22 @@
+h2{
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 12px;
+}
 .container{
   .col{
-    border: 3px solid;
-    height: 200px;
+    border: 1px solid #ccc;
+    height: 175px;
+    span{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-top: 1px solid #ccc;
+      width: 100%;
+      padding-left: 12px;
+      padding-top: 7px;
+      padding-bottom: 16px;
+    }
   }
 }
